@@ -24,7 +24,7 @@ services:
             - influxdb
 
     grafana:
-        image: grafana/grafana
+        image: aospan/grafana-with-plugins
         volumes:
             - ./grafana/provisioning/:/etc/grafana/provisioning/
         ports:
